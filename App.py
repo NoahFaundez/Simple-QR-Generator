@@ -1,9 +1,21 @@
+import tkinter
 import qrcode
 
-def generate_image(data):
-    img = qrcode.make(data)
-    img.save("qr_image.png")
+window = tkinter.Tk()
+window.title("QR-Generator")
+window.geometry("300x100")
 
-if __name__ == "__main__":
-    url = input("Input the url: ")
-    generate_image(url)
+def generate_image():
+    input = tebox.get(1.0, "end-1c")
+    if input != "":
+        img = qrcode.make(input)
+        img.save("qr_image.png")
+
+label = tkinter.Label(window,text="Ingrese la URL:")
+label.pack()
+tebox = tkinter.Text(window, height=1, width=30)
+genbutton = tkinter.Button(window, text="Generar", command=generate_image)
+tebox.pack()
+
+genbutton.pack()
+window.mainloop()
