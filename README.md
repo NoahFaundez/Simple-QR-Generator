@@ -1,5 +1,5 @@
 # Simple-QR-Generator #
-This is a repository for a application that runs with pyhton that generate a qr code with a url provide by the user
+This is a repository for a application that runs with python that generate a qr code with a url provide by the user
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
